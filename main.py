@@ -23,7 +23,7 @@ def talk(text):
 def voice_input():
     try:
         with sr.Microphone() as source:
-            print("Listening..")
+            print("Listening...")
             voice = listener.listen(source, timeout=9, phrase_time_limit=9)
             command = listener.recognize_google(voice)
 
